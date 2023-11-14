@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Treno | Prenotazione corsa</title>
+</head>
+
+<body class="bg-purple">
+
+    <main>
+
+        <h2 class="text-center text-white mt-3">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+
+
+
+
+        <div class="bg-white text-purple container rounded p-3 my-5 text-center">
+
+            <form>
+                <div class="row">
+                    <div class="mb-3 col">
+                        <label for="name" class="form-label">Nome e Cognome</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="km" class="form-label">Km da percorrere</label>
+                        <input type="number" class="form-control" id="km">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="eta" class="form-label">Fascia d'età</label>
+                        <select id="eta" class="form-select" aria-label="Default select example">
+                            <option value="1" selected>Minorenne</option>
+                            <option value="2">Maggiorenne</option>
+                            <option value="3">Over 65</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" onclick="showTicket()" class="btn border bg-body-secondary text-purple">Genera</button>
+                <button type="cancel" class="btn border bg-body-secondary text-purple">Annulla</button>
+            </form>
+
+        </div>
+
+
+
+        <div id="tickets"></div>
+
+
+
+
+
+<!-- 
+        <h2 class="text-center text-white mt-3">IL TUO BIGLIETTO</h2>
+
+        <div class="bg-white container rounded p-3 mt-4">
+
+            <h5>DETTAGLIO PASSEGGERI</h5>
+
+            <div class="border border-2">
+
+                <div class="row">
+                    <div class="bg-secondary col">
+                        <h6>NOME PASSEGGERO</h6>
+                        <p>Nome Cognome</p>
+                    </div>
+
+                    <div class="col">
+                        <h6>Offerta</h6>
+                        <p>Biglietto Standard</p>
+                    </div>
+
+                    <div class="col">
+                        <h6>Carrozza</h6>
+                        <p>Numero casuale da 1 a 10</p>
+                    </div>
+
+                    <div class="col">
+                        <h6>Codice CP</h6>
+                        <p>Codice casuale di 6 numeri</p>
+                    </div>
+
+                    <div class="col">
+                        <h6>Costo biglietto</h6>
+                        <p>2.10€</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div> -->
+
+
+
+
+
+
+
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
